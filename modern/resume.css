@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
-    /* height: 100vh; */
     background: linear-gradient(rgb(113, 113, 219), rgba(212, 212, 212, 0.788));
     background-repeat: no-repeat;
 }
-.heading{
+
+.heading {
     width: 50%;
     height: 100px;
     text-align: center;
@@ -18,36 +19,40 @@ body{
     margin-left: 25%;
     margin-top: 20px;
     color: white;
-    text-decoration: underline
+    text-decoration: underline;
 }
-.form-layout{
+
+.form-layout {
     background-color: white;
     width: 40%;
     margin-left: 30%;
     border-radius: 20px;
     padding: 25px;
 }
-.input{
+
+.input {
     font-size: 20px;
     padding-top: 10px;
-    
 }
-.input input{
-    width: 100%; 
+
+.input input {
+    width: 100%;
     height: 30px;
     border-radius: 5px;
     border-color: black;
     margin-top: 5px;
 }
-.layout-heading{
+
+.layout-heading {
     margin-top: 10px;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
-#description{
+#description {
     width: 100%;
 }
-.submit-btn{
+
+.submit-btn {
     width: 40%;
     height: 50px;
     margin-top: 20px;
@@ -56,4 +61,44 @@ body{
     border-radius: 20px;
     color: white;
     font-weight: 700;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+
+    .form-layout {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .submit-btn {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .form-layout {
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
+    }
+
+    .submit-btn {
+        width: 80%;
+    }
+
+    .input {
+        font-size: 16px;
+    }
 }
