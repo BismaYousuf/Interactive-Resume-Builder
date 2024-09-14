@@ -1,5 +1,4 @@
 "use strict";
-var _a, _b, _c, _d;
 function displayData() {
     // Fetch personal info from local storage
     const name = localStorage.getItem('from_name') || '';
@@ -58,9 +57,9 @@ function generateShareableLink() {
     });
 }
 // Set up event listeners for buttons
-(_a = document.getElementById("editBtn")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", editForm);
-(_b = document.getElementById("printBtn")) === null || _b === void 0 ? void 0 : _b.addEventListener("click", printResume);
-(_c = document.getElementById("shareBtn")) === null || _c === void 0 ? void 0 : _c.addEventListener("click", generateShareableLink);
+document.getElementById("editBtn")?.addEventListener("click", editForm);
+document.getElementById("printBtn")?.addEventListener("click", printResume);
+document.getElementById("shareBtn")?.addEventListener("click", generateShareableLink);
 // Call the display function when the page loads
 window.onload = displayData;
 // Function to show the edit modal
@@ -102,4 +101,4 @@ window.onclick = function (event) {
         closeEditModal();
     }
 };
-(_d = document.getElementById('editForm')) === null || _d === void 0 ? void 0 : _d.addEventListener('submit', saveChanges);
+document.getElementById('editForm')?.addEventListener('submit', saveChanges);

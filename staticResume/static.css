@@ -89,11 +89,11 @@ p {
 .btn {
     width: 20%;
     height: 40px;
-    font-size: 20px;
-    background-color: lightgreen;
+    font-size: 18px;
+    background-color: rgb(78, 143, 78);
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     transition: background-color 0.3s;
 }

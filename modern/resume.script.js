@@ -1,13 +1,11 @@
 "use strict";
 let form = document.getElementById("form");
 function saveProfilePicture(fileInput) {
-    var _a;
-    const file = (_a = fileInput.files) === null || _a === void 0 ? void 0 : _a[0];
+    const file = fileInput.files?.[0];
     if (file) {
         const reader = new FileReader();
         reader.onload = function (event) {
-            var _a;
-            const imageUrl = (_a = event.target) === null || _a === void 0 ? void 0 : _a.result;
+            const imageUrl = event.target?.result;
             localStorage.setItem('from_image', imageUrl);
         };
         reader.readAsDataURL(file);
@@ -31,7 +29,7 @@ function populateForm() {
 }
 // Call populateForm on page load to fill the form with existing data
 window.onload = populateForm;
-form === null || form === void 0 ? void 0 : form.addEventListener("submit", (e) => {
+form?.addEventListener("submit", (e) => {
     e.preventDefault();
     // Save form data to local storage
     localStorage.setItem('from_name', document.getElementById("firstName").value);
