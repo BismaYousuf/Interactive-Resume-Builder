@@ -32,18 +32,11 @@ body {
     font-size: 40px;
     color: white;
     font-weight: 600;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 .header p {
     font-size: 35px;
-    color: white;
-    font-weight: 600;
-}
-
-/* Section header styles */
-.secHeader {
-    font-size: 25px;
     color: white;
     font-weight: 600;
 }
